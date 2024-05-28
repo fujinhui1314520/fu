@@ -1,0 +1,33 @@
+body,
+dl,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    /* 清除小黑点  */
+    list-style: none;
+}
+img{
+    border: none;
+}
+
+a {
+    /* 清除下划线 */
+    text-decoration: none;
+    color: black;
+}
+input,
+button,textarea{
+    outline: none;
+}

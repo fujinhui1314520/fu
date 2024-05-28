@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.loopImgs{
+   
+    width: 820px;
+    height: 340px;
+    margin: 170px auto;
+    overflow: hidden;
+    position: relative;
+    opacity:0.8;
+    border-radius:30px;
+}
+
+.loopImgs .imgsList{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.loopImgs .imgsList>li{
+    width: 820px;
+    height: 100%;
+    float: left;
+}
+.loopImgs .imgsList>li img{
+    width: 100%;
+}
+
+.loopImgs .tabs{
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.loopImgs .tabs li{
+    width: 12px;
+    height: 12px;
+    border: 1px solid red;
+    border-radius: 50%;
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.loopImgs .tabs li.actived{
+    background: #ff6700;
+}
+
+.loopImgs button{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    display: none;
+}
+.loopImgs .left{
+    left: 0;
+}
+
+.loopImgs .right{
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

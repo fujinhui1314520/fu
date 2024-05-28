@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/*  首页内容  */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(224, 224, 192); */
+}
+
+/* 视频 */
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+/* 更改视频大小 */
+.image>video {
+    width: 100%;
+    height: 100%;
+    /* 视频等比例铺满 */
+    object-fit: cover;
+    margin: auto;
+
+}
+
+.Navigation-bar {
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(8, 7, 7, 0.6);
+}
+
+.box {
+    display: flex;
+    width: 1000px;
+    height: 50px;
+    /* background-color: antiquewhite; */
+    margin: auto;
+    justify-content: space-between;
+    /* 俩端对齐 */
+}
+
+
+/* 搜索框 */
+.Search-box {
+    /* //层级变高 */
+    z-index: 2;
+    /* 固定定位 居中 */
+    position: fixed;
+    top: 3%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    /* 过度时间 */
+    transition: 0.4s;
+}
+
+.btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: bisque;
+    /* 弹性布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* 过度时间 */
+    transition: 0.4s;
+}
+
+.btn input[type="submit"] {
+    /* 把submit按钮调整到和图标大小相同 */
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 鼠标移上去有点击提示 */
+    cursor: pointer;
+}
+
+.Search-box:hover .txt {
+    width: 200px;
+    padding: 0 6px;
+}
+
+.Search-box:hover .btn {
+    background-color: #ffffff;
+}
+
+
+/* 导航栏内容 */
+.left-nav {
+    position:relative ;
+    left: 150px;
+    display: flex;
+    width: 550px;
+    height: 80px;
+    /* background-color: blue; */
+}
+
+.left-nav>li {
+    width: 120px;
+    height: 80px;
+    /* background-color: bisque; */
+    text-align: center;
+    line-height: 75px;
+    ;
+}
+
+.left-nav>li>a {
+    color: aliceblue;
+    font-size: 25px;
+    font-family: '楷体';
+    font-style: italic;
+
+}
+
+.left-nav>li>a:hover {
+    color: rgb(13, 155, 155);
+}
+

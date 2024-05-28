@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 整体布局 */
+body {
+  background-image: url("../img/6.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* 输入框背景色修改 */
+textarea,
+input[type="text"] {
+  background-color: rgb(117, 223, 188, );
+
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.name {
+  color: yellow;
+  font-weight: bold;
+}
+
+button.sub {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button.sub:hover {
+  background-color: #45a049;
+}
+
+button.remove {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.remove:hover {
+  background-color: #e53935;
+}
+
+/* 添加button渐变效果 */
+.sub {
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  box-shadow: 0px 0px 60px #1471a2;
+  /* 设置盒子反射 */
+  -webkit-box-reflect:
+    /* 反射设置在底部 */
+    below 10px linear-gradient(
+      /* 设置渐变色 */
+      to bottom,
+      rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.4));
+}
+
+/* 设置悬浮样式 */
+.sub:hover {
+  background: linear-gradient(270deg,
+      rgba(178, 210, 133, 0.681)0%,
+      rgba(31, 215, 232, 0.873)60%);
+  color: rgb(4, 4, 38);
+
+  textarea,
+  input[type="text"] {
+    /* 其他样式规则 */
+
+    width: 50%;
+  }
+
+}
+
+.sub {
+  transition: 1s
+}
+
+/* 输入框背景色修改 */
+textarea,
+input[type="text"] {
+  background-color: rgb(164, 237, 213);
+  width: 50%;
+  opacity: 0.8;
+}
